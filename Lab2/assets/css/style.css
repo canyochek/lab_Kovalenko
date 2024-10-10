@@ -1,0 +1,37 @@
+nav{
+    width: 45%;
+    height: 3vh;
+    background-color: #F08080;
+    color: #fff;
+    float: right;
+}
+header {
+    width: 30%;
+    height: 10vh; 
+    background-color: aqua;
+    text-align: center;
+}
+
+.sect1{
+    width: 12%;
+    height: 22vh;
+    background-color: #bdbebd;
+    float: left;
+    text-align: center;
+}
+    
+.sect2 {
+    width: 30%;
+    height: 22vh;
+    background-color: #b1ff9a;
+    text-align: center;
+}
+
+footer {
+    background-color: #DA70D6;
+    width: 30%;
+    height: 8vh;
+    text-align: center;
+}
+
+
