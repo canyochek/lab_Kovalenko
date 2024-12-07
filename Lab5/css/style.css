@@ -1,0 +1,129 @@
+body{
+    background-color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    gap: 50px;
+}
+
+
+a{
+    color:aqua;
+    position: relative;
+    overflow: hidden;
+    padding: 15px 23px 15px 23px;
+    font-weight: 500;
+    transition: .5s;
+    letter-spacing: 3px;
+}
+
+a:first-child{
+    filter: hue-rotate(220deg);
+}
+
+a:last-child{
+    filter: hue-rotate(90deg);
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, aqua);
+    animation: animate1 1s infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+a span:nth-child(2) {
+    top: 0px;
+    right: 0px;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, aqua);
+    animation: animate2 1s infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+a span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(240deg, transparent, aqua);
+    animation: animate3 1s infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+a span:nth-child(4) {
+    bottom: 0px;
+    left: 0px;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, aqua);
+    animation: animate4 1s infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -100%;
+    }
+}   
+
+a:hover{
+    background-color: aqua;
+    color: #000;
+    box-shadow: 0 0 100px aqua;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, #0005);
+}
+
+a:first-child:hover{
+    
+    color:#000;
+    box-shadow: 0 0 100px aqua;
+}
+
+a:last-child:hover{
+    color: #000;
+    box-shadow: 0 0 100px aqua;
+}
